@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gpdwin", "gpdwin\gpdwin.csproj", "{1896E853-C4F4-4D68-BAF3-2F3B6F5E0D51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gpdwin1", "gpdwin1\gpdwin1.csproj", "{CE560527-D3E4-417C-80F9-8E87ECE163A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gpdwin2", "gpdwin2\gpdwin2.csproj", "{6EA4CB40-D36C-45D8-B69F-4A262812BBC7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1896E853-C4F4-4D68-BAF3-2F3B6F5E0D51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1896E853-C4F4-4D68-BAF3-2F3B6F5E0D51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1896E853-C4F4-4D68-BAF3-2F3B6F5E0D51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1896E853-C4F4-4D68-BAF3-2F3B6F5E0D51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE560527-D3E4-417C-80F9-8E87ECE163A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE560527-D3E4-417C-80F9-8E87ECE163A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE560527-D3E4-417C-80F9-8E87ECE163A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE560527-D3E4-417C-80F9-8E87ECE163A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EA4CB40-D36C-45D8-B69F-4A262812BBC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EA4CB40-D36C-45D8-B69F-4A262812BBC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EA4CB40-D36C-45D8-B69F-4A262812BBC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EA4CB40-D36C-45D8-B69F-4A262812BBC7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
