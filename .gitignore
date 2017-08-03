@@ -312,5 +312,5 @@ __pycache__/
 *.xsd.cs
 Contact GitHub API Training Shop Blog About
 © 2017 GitHub, Inc. Terms Privacy Security Status Help
-/gpdwin/gpdwin/App_Data/Logs
-/gpdwin/gpdwin/App_Data/TEMP
+/gpdwin/gpdwin*/App_Data/Logs
+/gpdwin/gpdwin*/App_Data/TEMP

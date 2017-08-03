@@ -1370,3 +1370,67 @@ _shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needF
  2017-08-03 13:31:39,126 [P16904/D13/T107] INFO  umbraco.content - Load Xml from file...
  2017-08-03 13:31:39,127 [P16904/D13/T107] INFO  umbraco.content - Loaded Xml from file.
  2017-08-03 13:31:39,136 [P16904/D13/T119] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-08-02 13:31:39
+ 2017-08-03 13:59:36,151 [P16904/D14/T21] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.6.4 application starting on DESKTOP-P5VI76R
+ 2017-08-03 13:59:36,212 [P16904/D14/T21] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2017-08-03 13:59:36,230 [P16904/D14/T21] INFO  Umbraco.Core.PluginManager - Hash determined (took 18ms)
+ 2017-08-03 13:59:36,387 [P16904/D14/T21] INFO  Umbraco.Core.MainDom - Acquiring MainDom...
+ 2017-08-03 13:59:36,391 [P16904/D14/T21] INFO  Umbraco.Core.MainDom - Acquired MainDom.
+ 2017-08-03 13:59:36,396 [P16904/D14/T21] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-03 13:59:37,167 [P16904/D14/T21] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 771ms)
+ 2017-08-03 13:59:37,168 [P16904/D14/T21] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IApplicationStartupHandler
+ 2017-08-03 13:59:37,182 [P16904/D14/T21] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IApplicationStartupHandler (took 14ms)
+ 2017-08-03 13:59:37,250 [P16904/D14/T21] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-03 13:59:37,254 [P16904/D14/T21] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 3ms)
+ 2017-08-03 13:59:37,255 [P16904/D14/T21] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2017-08-03 13:59:37,307 [P16904/D14/T21] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 52ms)
+ 2017-08-03 13:59:37,308 [P16904/D14/T21] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-03 13:59:37,309 [P16904/D14/T21] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-03 13:59:37,309 [P16904/D14/T21] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2017-08-03 13:59:37,321 [P16904/D14/T21] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 12ms)
+ 2017-08-03 13:59:37,381 [P16904/D14/T21] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-03 13:59:37,382 [P16904/D14/T21] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-03 13:59:37,382 [P16904/D14/T21] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.Mvc.SurfaceController
+ 2017-08-03 13:59:37,398 [P16904/D14/T21] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.Mvc.SurfaceController (took 16ms)
+ 2017-08-03 13:59:37,399 [P16904/D14/T21] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-03 13:59:37,399 [P16904/D14/T21] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-03 13:59:37,400 [P16904/D14/T21] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.WebApi.UmbracoApiController
+ 2017-08-03 13:59:37,422 [P16904/D14/T21] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.WebApi.UmbracoApiController (took 22ms)
+ 2017-08-03 13:59:46,213 [P16904/D14/T21] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2017-08-03 13:59:49,090 [P16904/D14/T21] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2017-08-03 13:59:49,412 [P16904/D14/T21] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2017-08-03 13:59:50,889 [P16904/D14/T21] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2017-08-03 13:59:50,915 [P16904/D14/T21] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Initializing uSync 73
+ 2017-08-03 13:59:50,934 [P16904/D14/T21] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Firing up uSync
+ 2017-08-03 13:59:53,090 [P16904/D14/T21] INFO  Jumoo.uSync.Core.uSyncCoreContext - Loading Context (1579ms)
+ 2017-08-03 13:59:53,585 [P16904/D14/T21] INFO  Jumoo.uSync.BackOffice.uSyncBackOfficeContext - Loading up Sync Handlers : 18
+ 2017-08-03 13:59:53,861 [P16904/D14/T21] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Running uSync Import: Group = default Folder = ~/uSync/data/ Force = False
+ 2017-08-03 13:59:53,941 [P16904/D14/T21] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DataType
+ 2017-08-03 13:59:58,655 [P16904/D14/T21] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 24 Items 0 changes 0 failures
+ 2017-08-03 13:59:58,658 [P16904/D14/T21] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: Template
+ 2017-08-03 13:59:59,235 [P16904/D14/T21] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 1 Items 0 changes 0 failures
+ 2017-08-03 13:59:59,237 [P16904/D14/T21] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DocumentType
+ 2017-08-03 14:00:01,886 [P16904/D14/T21] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 4 Items 0 changes 0 failures
+ 2017-08-03 14:00:01,888 [P16904/D14/T21] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: MediaType
+ 2017-08-03 14:00:03,004 [P16904/D14/T21] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 3 Items 0 changes 0 failures
+ 2017-08-03 14:00:03,005 [P16904/D14/T21] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: Languages
+ 2017-08-03 14:00:03,294 [P16904/D14/T21] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 1 Items 0 changes 0 failures
+ 2017-08-03 14:00:03,296 [P16904/D14/T21] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: DictionaryItem
+ 2017-08-03 14:00:03,303 [P16904/D14/T21] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 0 Items 0 changes 0 failures
+ 2017-08-03 14:00:03,305 [P16904/D14/T21] INFO  Jumoo.uSync.BackOffice.Logging - Running Import: macro
+ 2017-08-03 14:00:03,311 [P16904/D14/T21] INFO  Jumoo.uSync.BackOffice.Logging - Handler Import Complete: 0 Items 0 changes 0 failures
+ 2017-08-03 14:00:04,488 [P16904/D14/T21] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-03 14:00:04,489 [P16904/D14/T21] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2017-08-03 14:00:04,490 [P16904/D14/T21] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Core.PropertyEditors.IParameterEditor
+ 2017-08-03 14:00:04,727 [P16904/D14/T21] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Core.PropertyEditors.IParameterEditor (took 237ms)
+ 2017-08-03 14:00:10,827 [P16904/D14/T21] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - Setting up Events default
+ 2017-08-03 14:00:10,888 [P16904/D14/T21] INFO  Jumoo.uSync.BackOffice.uSyncAction - ### uSync.BackOffice Processed 38 items with 0 changes ###
+ 2017-08-03 14:00:10,891 [P16904/D14/T21] INFO  Jumoo.uSync.BackOffice.uSyncApplicationEventHandler - uSync Complete (19957ms)
+ 2017-08-03 14:00:10,964 [P16904/D14/T21] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 35101ms)
+ 2017-08-03 14:00:11,880 [P16904/D14/T162] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://gpdwin2.com:80/umbraco (UmbracoModule request)
+ 2017-08-03 14:00:12,825 [P16904/D14/T162] INFO  umbraco.content - Load Xml from file...
+ 2017-08-03 14:00:12,832 [P16904/D14/T162] INFO  umbraco.content - Loaded Xml from file.
+ 2017-08-03 14:01:13,889 [P16904/D14/T162] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2017-08-02 14:01:13
+ 2017-08-03 14:01:14,515 [P16904/D14/T162] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2017-08-03 14:01:14,516 [P16904/D14/T162] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 1ms)
+ 2017-08-03 14:01:14,518 [P16904/D14/T162] INFO  Umbraco.Core.PluginManager - Resolving [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2017-08-03 14:01:14,552 [P16904/D14/T162] INFO  Umbraco.Core.PluginManager - Resolved [Umbraco.Core.Persistence.Mappers.MapperForAttribute]Umbraco.Core.Persistence.Mappers.BaseMapper (took 34ms)
