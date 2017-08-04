@@ -19,7 +19,7 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "dfdc3d262bbc788d")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "1c815f96c6df9748")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 namespace Umbraco.Web.PublishedContentModels
@@ -385,6 +385,224 @@ namespace Umbraco.Web.PublishedContentModels
 		public string Image
 		{
 			get { return this.GetPropertyValue<string>("image"); }
+		}
+	}
+
+	/// <summary>Master GPD</summary>
+	[PublishedContentModel("masterGPD")]
+	public partial class MasterGpd : PublishedContentModel
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "masterGPD";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public MasterGpd(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<MasterGpd, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Body
+		///</summary>
+		[ImplementPropertyType("body")]
+		public string Body
+		{
+			get { return this.GetPropertyValue<string>("body"); }
+		}
+
+		///<summary>
+		/// Css Class
+		///</summary>
+		[ImplementPropertyType("cssClass")]
+		public string CssClass
+		{
+			get { return this.GetPropertyValue<string>("cssClass"); }
+		}
+
+		///<summary>
+		/// Sub Title
+		///</summary>
+		[ImplementPropertyType("subTitle")]
+		public string SubTitle
+		{
+			get { return this.GetPropertyValue<string>("subTitle"); }
+		}
+
+		///<summary>
+		/// Title
+		///</summary>
+		[ImplementPropertyType("title")]
+		public string Title
+		{
+			get { return this.GetPropertyValue<string>("title"); }
+		}
+	}
+
+	/// <summary>Home GPD</summary>
+	[PublishedContentModel("home")]
+	public partial class Home : MasterGpd
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "home";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public Home(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Home, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+	}
+
+	/// <summary>Generic GPD</summary>
+	[PublishedContentModel("generic")]
+	public partial class Generic : MasterGpd
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "generic";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public Generic(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Generic, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+	}
+
+	/// <summary>Login GPD</summary>
+	[PublishedContentModel("loginGPD")]
+	public partial class LoginGpd : MasterGpd
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "loginGPD";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public LoginGpd(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<LoginGpd, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+	}
+
+	/// <summary>Register GPD</summary>
+	[PublishedContentModel("registerGPD")]
+	public partial class RegisterGpd : MasterGpd
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "registerGPD";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public RegisterGpd(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<RegisterGpd, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+	}
+
+	/// <summary>Invoice Print GPD</summary>
+	[PublishedContentModel("invoicePrintGPD")]
+	public partial class InvoicePrintGpd : MasterGpd
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "invoicePrintGPD";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public InvoicePrintGpd(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<InvoicePrintGpd, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+	}
+
+	/// <summary>Lockscreen</summary>
+	[PublishedContentModel("lockscreen")]
+	public partial class Lockscreen : MasterGpd
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "lockscreen";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public Lockscreen(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Lockscreen, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
 	}
 

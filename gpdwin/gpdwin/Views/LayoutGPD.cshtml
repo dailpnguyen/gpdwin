@@ -1,0 +1,114 @@
+﻿@using ClientDependency.Core.Mvc
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+@{
+    Layout = null;
+    Html.RequiresCss("~/bootstrap/css/bootstrap.min.css");<!-- Bootstrap 3.3.6 -->
+    Html.RequiresCss("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css");<!-- Font Awesome -->
+    Html.RequiresCss("https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css");<!-- Ionicons -->
+    Html.RequiresCss("~/dist/css/AdminLTE.min.css");<!-- Theme style -->
+    Html.RequiresCss("~/dist/css/skins/_all-skins.min.css");<!-- AdminLTE Skins. Choose a skin from the css/skins folder instead of downloading all of them to reduce the load. -->
+
+    Html.RequiresJs("~/plugins/jQuery/jquery-2.2.3.min.js");<!-- jQuery 2.2.3 -->
+    Html.RequiresJs("~/bootstrap/js/bootstrap.min.js");<!-- Bootstrap 3.3.6 -->
+    Html.RequiresJs("~/plugins/slimScroll/jquery.slimscroll.min.js");<!-- Slimscroll -->
+    Html.RequiresJs("~/plugins/fastclick/fastclick.js");<!-- FastClick -->
+    Html.RequiresJs("~/dist/js/app.min.js");<!-- AdminLTE App -->
+    Html.RequiresJs("~/dist/js/demo.js");<!-- AdminLTE for demo purposes -->
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AdminLTE 2 | Dashboard</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    @Html.RenderCssHere()
+    @RenderSection("CssHeader", false)
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+        <header class="main-header">
+            @Html.Partial("~/Views/Partials/GPD/feature/indentity/logo.cshtml")
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        @Html.Partial("~/Views/Partials/GPD/feature/navigation/messages menu.cshtml")
+                        @Html.Partial("~/Views/Partials/GPD/feature/navigation/notifications menu.cshtml")
+                        @Html.Partial("~/Views/Partials/GPD/feature/navigation/tasks menu.cshtml")
+                        @Html.Partial("~/Views/Partials/GPD/feature/navigation/user menu.cshtml")
+                        <!-- Control Sidebar Toggle Button -->
+                        <li>
+                            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                @Html.Partial("~/Views/Partials/GPD/feature/account/user panel.cshtml")
+                @Html.Partial("~/Views/Partials/GPD/feature/search/search form header.cshtml")
+                @Html.Partial("~/Views/Partials/GPD/feature/navigation/sidebar menu.cshtml")
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <h1>
+                    @Umbraco.Field("title")
+                    <small>@Umbraco.Field("subTitle")</small>
+                </h1>
+                @Html.Partial("~/Views/Partials/GPD/feature/navigation/breadcrumb.cshtml")
+            </section>
+
+            @RenderSection("Notification", false)
+
+            <!-- Main content -->
+            <section class="@Umbraco.Field("cssClass", altText:"content")">
+                @RenderBody()
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            @Html.Partial("~/Views/Partials/GPD/feature/indentity/copyright.cshtml")
+        </footer>
+
+        @Html.Partial("~/Views/Partials/GPD/feature/navigation/control sidebar.cshtml")
+
+        <!-- /.control-sidebar -->
+        <!-- Add the sidebar's background. This div must be placed
+             immediately after the control sidebar -->
+        <div class="control-sidebar-bg"></div>
+    </div>
+    <!-- ./wrapper -->
+
+    @Html.RenderJsHere()
+    @RenderSection("JsHeader", false)
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button);
+    </script>
+</body>
+</html>
